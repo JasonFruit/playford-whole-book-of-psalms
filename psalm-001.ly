@@ -79,12 +79,12 @@ bassusMusic = {
 \score
 {
   \header {
-  poet = \markup { \typewriter { \author } }
-  instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
-			 \tuneMeter }
-  composer = \markup { \typewriter { \titleNote } }
-  tagline = ""
-}
+    poet = \markup { \typewriter { \author } }
+    instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
+			   \tuneMeter }
+    composer = \markup { \typewriter { \titleNote } }
+    tagline = ""
+  }
   <<
     \new StaffGroup {
       <<
@@ -124,4 +124,87 @@ bassusMusic = {
     indent = 0 \cm
   }
   \midi { }
+}
+
+\markup {
+  \small {
+    \column {
+      \line {
+	\bold { "3. " }
+	\wordwrap-string #"
+  He shall be like a tree that is
+
+  planted the rivers nigh,
+
+  Which in due season bringeth forth
+
+  its fruit abundantly;"
+      }
+      \vspace #0.6
+      \line {
+	\bold { "4. " }
+	\wordwrap-string #"
+  Whose leaf shall never fade nor fall,
+
+  but flourishing shall stand:
+
+  E'en so all things shall prosper well
+
+  that this man takes in hand."
+      }
+      \vspace #0.6
+      \line {
+	\bold { "5. " }
+	\wordwrap-string #"
+  As for ungodly men, with them
+
+  it shall be nothing so;
+
+  But as the chaff, which by the wind
+
+  is driven to and fro."
+      }
+    }
+    \hspace #3
+    \column {
+      \line {
+	\bold { "6. " }
+	\wordwrap-string #"
+  Therefore the wicked men shall not
+
+  in judgment stand upright,
+
+  Nor in th' assembly of the just
+
+  shall sinners come in sight."
+      }
+      \vspace #0.6
+      \line {
+	\bold { "7. " }
+	\wordwrap-string #"
+  For why? The way of godly men
+
+  unto the Lord is known:
+
+  Whereas the way of wicked men
+
+  shall quite be overthrown."
+      }
+      \vspace #0.6
+      \line {
+	\hspace #2.4
+	\italic {
+	  \wordwrap-string #"
+To Father, Son, and Holy Ghost,
+
+all glory be therefore:
+
+As in beginning was, is now,
+
+and shall be evermore."
+	}
+      }
+      \vspace #1.4
+    }
+  }
 }
