@@ -9,11 +9,13 @@ sizeFactor = #1.5
 \paper  {
   #(set-paper-size "6x9")
   #(define fonts
-    (make-pango-font-tree
-     "IM Fell English" 
-     "IM Fell English"
-     "IM Fell English SC"
-     (/ (/ staffSize sizeFactor) 20)))
+    (set-global-fonts
+     #:music "gutenberg1939"
+     #:brace "gutenberg1939"
+     #:factor (/ staff-height pt 20)
+     #:roman "IM Fell English" 
+     #:sans "IM Fell English"
+     #:typewriter "IM Fell English SC"))
   print-all-headers = ##t
   print-page-number = ##t
   top-margin = 0.5 \in
@@ -23,8 +25,6 @@ sizeFactor = #1.5
 }
 
 \header {
-  % title = "The Whole Book of Psalms"
-  % subtitle = "John Playford"
   tagline = ""
 }
 
