@@ -264,5 +264,6 @@ bassusMusic = {
     shall happy be and blest."
       }
     }
+    \vspace #5
   }
 }

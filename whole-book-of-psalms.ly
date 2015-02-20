@@ -43,3 +43,4 @@ sizeFactor = #1.5
 \include "psalm-005.ly"
 \include "psalm-006.ly"
 \include "psalm-007.ly"
+\include "psalm-008.ly"
