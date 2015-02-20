@@ -80,7 +80,7 @@ bassusMusic = {
 %   poet = \markup { \typewriter { \author } }
 %   instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 % 			 \tuneMeter }
-%   composer = \markup { \typewriter { \titleNote } }
+%   composer = \markup { \italic { \titleNote } }
 %   tagline = ""
 % }
 
