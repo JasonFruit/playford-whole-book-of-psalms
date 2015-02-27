@@ -45,6 +45,6 @@ sizeFactor = #1.5
 \include "worcester.ly"
 \include "st-marys.ly"
 \include "gloucester.ly"
-
+\include "glastenbury.ly"
 
 \include "te-deum.ly"
