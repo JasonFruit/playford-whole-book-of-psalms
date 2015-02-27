@@ -1,16 +1,8 @@
-tuneTitle = "Psalm 2"
-titleNote = "Cambridge Tune"
+tuneTitle = "Cambridge Tune"
 tuneMeter = "C.M."
 author = ""
 pageCount = 1
 voiceFontSize = 0
-
-stanzaOne = \lyricmode {
-  Why did the Gen- tiles tu- mults raise?
-  what rage was in their brain?
-  Why do the peo- ple still con- trive
-  a thing that is but vain?
-}
 
 cantusMusic = {
   \clef treble
@@ -67,9 +59,9 @@ bassusMusic = {
 {
   \header {
     poet = \markup { \typewriter { \author } }
+    
     instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 			   \tuneMeter }
-    composer = \markup { \italic { \titleNote } }
     tagline = ""
   }
   <<
@@ -78,7 +70,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {
@@ -113,157 +104,3 @@ bassusMusic = {
   \midi { }
 }
 
-\markup {
-  \small {
-    \column {
-      \vspace #0.6
-      \line {
-	\bold { "2. " }
-	\wordwrap-string #"
-    The kings and rulers of the earth
-
-    conspire and are all bent
-
-    Against the Lord, and Christ his Son,
-
-    whom he among us sent."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "3. " }
-	\wordwrap-string #"
-    Shall we be bound to them? Say they,
-
-    let all their bonds be broke;
-
-    And of their doctrine and their law
-
-    let us reject the yoke."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "4. " }
-	\wordwrap-string #"
-    But he that in the heaven dwells,
-
-    their doings will deride;
-
-    And make them all as mocking-stocks
-
-    throughout the world so wide."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "5. " }
-	\wordwrap-string #"
-    For in his wrath he shall reprove
-
-    their pride and scornful way,
-
-    And in his fury trouble them,
-
-    and unto them shall say,"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "6. " }
-	\wordwrap-string #"
-    I have anointed him my King
-
-    upon my holy hill;
-
-    I will therefore, Lord, preach thy law
-
-    according to thy will:"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "7. " }
-	\wordwrap-string #"
-    The law whereof the Lord himself
-
-    hath thus said unto me,
-
-    Thou art my only Son, this day
-
-    have I begotten thee."
-      }
-    }
-    \hspace #3
-    \column {
-      \vspace #0.6
-      \line {
-	\bold { "8. " }
-	\wordwrap-string #"
-    The people I will give to thee,
-
-    as heirs at thy request
-
-    The ends and coasts of all the earth
-
-    by thee shall be possessed."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "9. " }
-	\wordwrap-string #"
-    Thou shalt them bruise e'en like to those
-
-    that under foot are trod,
-
-    And as a potter's vessel break
-
-    them with an iron rod."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "10. " }
-	\wordwrap-string #"
-    Now ye, O kings and rulers all,
-
-    be wise therefore and learned,
-
-    By who the matters of the world
-
-    are judged and discerned."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "11. " }
-	\wordwrap-string #"
-    See that ye serve the Lord above
-
-    in trembling and in fear;
-
-    See that with rev'rence ye rejoice
-
-    when ye to him draw near:"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "12. " }
-	\wordwrap-string #"
-    See that ye do embrace and kiss
-
-    his Son without delay;
-
-    Lest in his wrath ye suddenly
-
-    Perish from the right way."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "13. " }
-	\wordwrap-string #"
-    If once his wrath (but little) shall
-
-    be kindled in his breast,
-
-    Then only they that trust in him
-
-    shall happy be and blest."
-      }
-    }
-    \vspace #5
-  }
-}

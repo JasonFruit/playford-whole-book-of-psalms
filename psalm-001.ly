@@ -1,20 +1,8 @@
 tuneTitle = "Psalm 1"
-titleNote = "Or to York Tune"
 tuneMeter = "C.M.D."
 author = ""
 pageCount = 1
 voiceFontSize = 0
-
-stanzaOne = \lyricmode {
-  The man is blest that hath not lent
-  to ill ad- vice his ear:
-  Nor led his life as sin- ners do,
-  nor sat in scorn- ers' chair.
-  But in the law of God the Lord
-  doth set his whole de- light:
-  And in that law doth ex- er- cise
-  him- self both day and night.
-}
 
 cantusMusic = {
   \clef treble
@@ -80,9 +68,7 @@ bassusMusic = {
 {
   \header {
     poet = \markup { \typewriter { \author } }
-    instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
-			   \tuneMeter }
-    composer = \markup { \italic { \titleNote } }
+    instrument = \markup { \typewriter { #(string-append tuneTitle ". " tuneMeter) } }
     tagline = ""
   }
   <<
@@ -91,7 +77,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {
@@ -124,87 +109,4 @@ bassusMusic = {
     indent = 0 \cm
   }
   \midi { }
-}
-
-\markup {
-  \small {
-    \column {
-      \line {
-	\bold { "3. " }
-	\wordwrap-string #"
-  He shall be like a tree that is
-
-  planted the rivers nigh,
-
-  Which in due season bringeth forth
-
-  its fruit abundantly;"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "4. " }
-	\wordwrap-string #"
-  Whose leaf shall never fade nor fall,
-
-  but flourishing shall stand:
-
-  E'en so all things shall prosper well
-
-  that this man takes in hand."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "5. " }
-	\wordwrap-string #"
-  As for ungodly men, with them
-
-  it shall be nothing so;
-
-  But as the chaff, which by the wind
-
-  is driven to and fro."
-      }
-    }
-    \hspace #3
-    \column {
-      \line {
-	\bold { "6. " }
-	\wordwrap-string #"
-  Therefore the wicked men shall not
-
-  in judgment stand upright,
-
-  Nor in th' assembly of the just
-
-  shall sinners come in sight."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "7. " }
-	\wordwrap-string #"
-  For why? The way of godly men
-
-  unto the Lord is known:
-
-  Whereas the way of wicked men
-
-  shall quite be overthrown."
-      }
-      \vspace #0.6
-      \line {
-	\hspace #2.4
-	\italic {
-	  \wordwrap-string #"
-To Father, Son, and Holy Ghost,
-
-all glory be therefore:
-
-As in beginning was, is now,
-
-and shall be evermore."
-	}
-      }
-      \vspace #1.4
-    }
-  }
 }

@@ -1,15 +1,9 @@
-tuneTitle = "Psalm 6"
-titleNote = "Bristol Tune"
+tuneTitle = "Bristol Tune"
 tuneMeter = "C.M."
 author = ""
 voiceFontSize = 0
 
-stanzaOne = \lyricmode {
-  Lord, in thy wrath re- prove me not,
-  Though I de- serve thine ire:
-  Nor yet cor- rect me in thy rage,
-  O Lord, I thee de- sire.
-}
+
 
 cantusMusic = {
   \clef treble
@@ -64,9 +58,7 @@ bassusMusic = {
 {
   \header {
     poet = \markup { \typewriter { \author } }
-    instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
-			   \tuneMeter }
-    composer = \markup { \italic { \titleNote } }
+    instrument = \markup { \typewriter { #(string-append tuneTitle ". " tuneMeter) } }
     tagline = ""
   }
 
@@ -76,7 +68,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {

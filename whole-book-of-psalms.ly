@@ -37,10 +37,14 @@ sizeFactor = #1.5
 }
 
 \include "psalm-001.ly"
-\include "psalm-002.ly"
+\include "cambridge.ly"
 \include "psalm-003.ly"
-\include "psalm-004.ly"
-\include "psalm-005.ly"
-\include "psalm-006.ly"
-\include "psalm-007.ly"
-\include "psalm-008.ly"
+\include "oxford.ly"
+\include "london.ly"
+\include "bristol.ly"
+\include "worcester.ly"
+\include "st-marys.ly"
+\include "gloucester.ly"
+
+
+\include "te-deum.ly"

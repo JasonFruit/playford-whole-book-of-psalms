@@ -1,15 +1,7 @@
-tuneTitle = "Psalm 8"
-titleNote = "St. Mary's Tune"
+tuneTitle = "St. Mary's Tune"
 tuneMeter = "C.M."
 author = ""
 voiceFontSize = 0
-
-stanzaOne = \lyricmode {
-  O God our Lord, how won- der- ful
-  are thy works ev'- ry where!
-  Thy fame sur- mounts in dig- ni- ty
-  a- bove the hea- vens clear!
-}
 
 cantusMusic = {
   \clef treble
@@ -66,7 +58,6 @@ bassusMusic = {
     poet = \markup { \typewriter { \author } }
     instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 			   \tuneMeter }
-    composer = \markup { \typewriter { \titleNote } }
     tagline = ""
   }
 
@@ -76,7 +67,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {
@@ -111,100 +101,3 @@ bassusMusic = {
   \midi { }
 }
 
-\markup {
-  \small {
-    \column {
-      \vspace #0.6
-      \line {
-	\bold { "2. " }
-	\wordwrap-string #"
-  E'en by the mouth of sucking babes
-
-         thou wilt confound thy foes;
-
-      For in those babes thy might is seen
-
-         thy graces they disclose."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "3. " }
-	\wordwrap-string #"
-   And when I see the heav'ns above,
-
-         the work of thine own hand,
-
-      The sun, the moon, and all the stars
-
-         in order as they stand;"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "4. " }
-	\wordwrap-string #"
-   Lord what is man, that thou of him
-
-         tak'st such abundant care!
-
-      Or what the son of man, whom thou
-
-         to visit dost not spare!"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "5. " }
-	\wordwrap-string #"
-   For thou hast made him little less
-
-         than angels in degree;"
-      }
-    }
-    \hspace #3
-    \column {
-      \vspace #0.6
-      \line {
-	\hspace #2.5
-	\wordwrap-string #"
-      And thou hast also crowned him
-
-         with glorious dignity."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "6. " }
-	\wordwrap-string #"
-   Thou hast preferred him to be lord
-
-         of all thy works, and thou
-
-      Hast in subjection unto him
-
-         put all things here below."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "7. " }
-	\wordwrap-string #"
-   As sheep, and neat, and all beasts else
-
-         that in the fields do feed,
-
-      Fowls of the air, fish of the sea,
-
-         and all that therein breed,"
-      }
-      \vspace #0.6
-      \line {
-	\bold { "8. " }
-	\wordwrap-string #"
-   O God our Lord, how excellent
-
-         is thy most glorious Name
-
-      In all the earth! Therefore do we
-
-         praise and adore the same."
-      }
-    }
-  }
-}

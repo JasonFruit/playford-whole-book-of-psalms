@@ -1,20 +1,7 @@
 tuneTitle = "Te Deum"
-titleNote = "Or to London New Tune"
 tuneMeter = "C.M.D."
 author = ""
 voiceFontSize = 0
-
-stanzaOne = \lyricmode {
-  We praise thee, God and thee con- fess
-  the on- ly Lord to be,
-  And as e- ter- nal Fa- ther,
-  all the earth doth wor- ship thee.
-
-  To thee all An- gels cry,
-  the heav'ns and all the pow'rs there- in:
-  To thee Che- rub and Se- ra- phin
-  to cry they do not lin.
-}
 
 cantusMusic = {
   \clef treble
@@ -84,7 +71,6 @@ bassusMusic = {
     poet = \markup { \typewriter { \author } }
     instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 			   \tuneMeter }
-    composer = \markup { \typewriter { \titleNote } }
     tagline = ""
   }
 
@@ -94,7 +80,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {

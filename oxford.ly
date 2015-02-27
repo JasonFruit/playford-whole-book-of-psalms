@@ -1,15 +1,7 @@
-tuneTitle = "Psalm 4"
-titleNote = "Oxford Tune"
+tuneTitle = "Oxford Tune"
 tuneMeter = "C.M."
 author = ""
 voiceFontSize = 0
-
-stanzaOne = \lyricmode {
-  O God that art my right- eous- ness,
-  Lord hear me when I call:
-  Thou hast set me at li- ber- ty,
-  when I was bound in thrall.
-}
 
 cantusMusic = {
   \clef treble
@@ -68,7 +60,6 @@ bassusMusic = {
     poet = \markup { \typewriter { \author } }
     instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 			   \tuneMeter }
-    composer = \markup { \italic { \titleNote } }
     tagline = ""
   }
   <<
@@ -77,7 +68,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {

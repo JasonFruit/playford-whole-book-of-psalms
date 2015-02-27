@@ -1,19 +1,7 @@
 tuneTitle = "Psalm 3"
-titleNote = "Or to Westminster Tune"
 tuneMeter = "C.M."
 author = ""
 voiceFontSize = 0
-
-stanzaOne = \lyricmode {
-  O Lord, how are my foes in- creased,
-  which vex me more and more!
-  They break my heart when as they say,
-  God can not him re- store.
-  But thou, O Lord, art my de- fence,
-  when I am hard be- stead;
-  My wor- ship and mine hon- our both,
-  and thou hold'st up my head.
-}
 
 cantusMusic = {
   \clef treble
@@ -88,9 +76,7 @@ bassusMusic = {
 {
   \header {
     poet = \markup { \typewriter { \author } }
-    instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
-			   \tuneMeter }
-    composer = \markup { \typewriter { \titleNote } }
+    instrument = \markup { \typewriter { #(string-append tuneTitle ". " tuneMeter) } }
     tagline = ""
   }
 
@@ -100,7 +86,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {
@@ -135,86 +120,3 @@ bassusMusic = {
   \midi { }
 }
 
-\markup {
-  \small {
-    \column {
-      \vspace #0.6
-      \line {
-	\bold { "3. " }
-	\wordwrap-string #"
-   Then with my voice unto the Lord
-
-         I did both call and cry;
-
-      And he out of his holy hill
-
-         did here me instantly."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "4. " }
-	\wordwrap-string #"
-   I laid me down, and quietly
-
-         I slept, and rose again;
-
-      For why? I know assuredly,
-
-         The Lord did me sustain."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "5. " }
-	\wordwrap-string #"
-   If thousands up against me rise,
-
-         I will not be afraid;
-
-      For thou art still my Lord and God,
-
-         My Savior and my aid."
-      }
-    }
-    \column {
-      \vspace #0.6
-      \line {
-	\bold { "6. " }
-	\wordwrap-string #"
-   Rise up therefore, save me, my God
-
-         To thee I make my prayer;
-
-      For thou hast broke the cheeks and teeth
-
-         Of all that wicked are."
-      }
-      \vspace #0.6
-      \line {
-	\bold { "7. " }
-	\wordwrap-string #"
-   Salvation only doth belong
-
-         to thee, O Lord, above;
-
-      Who on thy people dost bestow
-
-         thy blessing and thy love."
-      }
-      \vspace #0.6
-      \line {
-	\hspace #2.4
-	\italic {
-	  \wordwrap-string #"
-To Father, Son, and Holy Ghost,
-
-all glory be therefore:
-
-As in beginning was, is now,
-
-and shall be evermore."
-	}
-      }
-    }
-    \vspace #5
-  }
-}

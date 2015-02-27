@@ -4,16 +4,12 @@ tuneMeter = "METER"
 author = ""
 voiceFontSize = 0
 
-stanzaOne = \lyricmode {
-  
-}
-
 cantusMusic = {
   \clef treble
   \key c \major
   \autoBeamOff
   \time 4/2
-  \relative c' {
+  \relative c'' {
     \override Staff.NoteHead.style = #'baroque
     \set Score.tempoHideNote = ##t \tempo 4 = 120
     \override Staff.TimeSignature #'break-visibility = ##(#f #f #f) 
@@ -54,7 +50,7 @@ bassusMusic = {
     poet = \markup { \typewriter { \author } }
     instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 			   \tuneMeter }
-    composer = \markup { \typewriter { \titleNote } }
+    composer = \markup { \italic { \titleNote } }
     tagline = ""
   }
 
@@ -64,7 +60,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {

@@ -1,5 +1,4 @@
-tuneTitle = "Psalm 9"
-titleNote = "Gloucester Tune"
+tuneTitle = "Gloucester Tune"
 tuneMeter = "C.M."
 author = ""
 voiceFontSize = 0
@@ -59,7 +58,6 @@ bassusMusic = {
     poet = \markup { \typewriter { \author } }
     instrument = \markup { \typewriter { #(string-append tuneTitle ". ") }
 			   \tuneMeter }
-    composer = \markup { \italic { \titleNote } }
     tagline = ""
   }
 

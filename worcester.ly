@@ -4,12 +4,7 @@ tuneMeter = "C.M."
 author = ""
 voiceFontSize = 0
 
-stanzaOne = \lyricmode {
-  O Lord, my God, I put my trust
-  and con- fi- dence in thee,
-  Save me from them that me pur- sue,
-  and still de- li- ver me.
-}
+
 
 cantusMusic = {
   \clef treble
@@ -77,7 +72,6 @@ bassusMusic = {
 	\new Staff = "cantus" {
 	  <<
 	    \new Voice = "one" { \stemUp \slurUp \tieUp \cantusMusic }
-            \new Lyrics \lyricsto "one" \stanzaOne
 	  >>
 	}
 	\new Staff = "medius" {
