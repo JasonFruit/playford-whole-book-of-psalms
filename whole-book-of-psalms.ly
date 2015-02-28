@@ -16,12 +16,6 @@ sizeFactor = #1.5
      #:roman "IM Fell English" 
      #:sans "IM Fell English"
      #:typewriter "IM Fell English SC"))
-  % #(define fonts
-  %   (make-pango-font-tree
-  %    "IM Fell English" 
-  %    "IM Fell English"
-  %    "IM Fell English SC"
-  %    (/ (/ staffSize sizeFactor) 20)))
   print-all-headers = ##t
   print-page-number = ##t
   top-margin = 0.5 \in
@@ -31,8 +25,6 @@ sizeFactor = #1.5
 }
 
 \header {
-  % title = "The Whole Book of Psalms"
-  % subtitle = "John Playford"
   tagline = ""
 }
 
@@ -60,5 +52,8 @@ sizeFactor = #1.5
 \include "norwich.ly"
 \include "psalm-030.ly"
 \include "lichfield.ly"
+\include "psalm-033.ly"
+\include "psalm-038.ly"
+\include "westminster.ly"
 
 \include "te-deum.ly"
