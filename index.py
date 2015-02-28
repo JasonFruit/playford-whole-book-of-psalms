@@ -1,7 +1,7 @@
 import re
 from glob import glob
 
-title_rgx = re.compile(r'titleNote = "([^"]+)"')
+title_rgx = re.compile(r'tuneTitle = "([^"]+)"')
 
 titles = set([])
 
@@ -10,7 +10,6 @@ for fn in [fn for fn in glob("*.ly")
     lilypond = open(fn, "r").read()
     matches = title_rgx.findall(lilypond)
     if matches:
-        print fn, matches[0]
         titles.add(matches[0])
         
 for title in sorted(list(titles)):
