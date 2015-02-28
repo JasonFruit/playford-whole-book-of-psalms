@@ -51,5 +51,7 @@ sizeFactor = #1.5
 \include "york.ly"
 \include "martyrs.ly"
 \include "windsor.ly"
+\include "psalm-018.ly"
+\include "st-james.ly"
 
 \include "te-deum.ly"
