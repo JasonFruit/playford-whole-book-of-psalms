@@ -62,5 +62,6 @@ sizeFactor = #1.5
 \include "psalm-046.ly"
 \include "london-new.ly"
 \include "exeter.ly"
+\include "psalm-050.ly"
 
 \include "te-deum.ly"
